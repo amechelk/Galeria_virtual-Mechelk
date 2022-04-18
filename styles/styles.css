@@ -9,6 +9,11 @@ img{
     margin: 10%;
     border: solid brown;
     padding: 5%;
+    background-image: linear-gradient(rgb(251, 251, 251), grey);
+    transition: height 2s, width 2s;
+}
+img:hover{
+    max-width: 90%;
 }
 html{
     font-size: 62.5%; /*1 rem === 10px*/
@@ -53,6 +58,7 @@ nav{
     border: solid 2px black;
     justify-content: space-around;
     word-spacing: 20px;
+    background-image: linear-gradient(to left brown , rgb(70, 20, 20));
     
 }
 li{
@@ -66,6 +72,7 @@ ul{
 }
 form{
     text-align: center;
+    
 }
 .texto{
     display: flex;
@@ -78,6 +85,7 @@ form{
 .volver{
     text-align: center;
     margin: 5%;
+   
 }
 a:link{
     text-decoration: none;
@@ -88,10 +96,10 @@ a:link{
     .container-padre {background: antiquewhite;
     grid-template-columns: auto;
     
-} nav{
-    text-align: center;
-    text-decoration: none;
-    padding: 5%;
+} 
+.gradient{
+    background-image: radial-gradient(coral, grey);
+    
 }
 li{
     display: inline;
