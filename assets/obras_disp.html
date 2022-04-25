@@ -7,11 +7,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="../styles/bootstrap.min.css" rel="stylesheet">
   <!--<link rel="stylesheet" href="../styles/styles.css">-->
+  <style>
+    .animationTitle{
+      color: red;
+      animation-name: animationTitle;
+      animation-duration: 15s;
+    }
+    @keyframes animationTitle{
+      25% {color: brown;}
+      50% {color: darkred;}
+      75% {color: black;}
+      100% {color:red;}
+    }
+  </style>
   <title>Obras</title>
 </head>
 
 <body>
-  <h1 style="text-align: center; letter-spacing:10px;">Obras disponibles</h1>
+  <div class="animationTitle">
+    <h1 style="text-align: center; letter-spacing:10px;">Obras disponibles</h1>
+  </div>
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#"></a>
