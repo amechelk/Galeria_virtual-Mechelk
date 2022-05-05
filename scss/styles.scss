@@ -4,129 +4,31 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: antiquewhite;
-}
-
-
-
-body {
-    background-color: $color-background;
-
-    img {
-        max-width: 80%;
-        margin: 10%;
-        border: solid brown;
-        padding: 5%;
-        background-image: linear-gradient(rgb(251, 251, 251), grey);
-        transition: height 2s, width 2s;
-
-        &:hover {
-            border: solid black 5px;
-        }
-    }
-
-    html {
-        font-size: 62.5%;
-        /*1 rem === 10px*/
-        font-weight: 100;
-    }
-
-    .titulo {
-        padding: 5%;
-    }
-
-    body {
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 1.8rem;
-        color: rgb(135, 132, 132);
-
-    }
-
-    .container-padre {
-        min-height: 100%;
-        width: 90%;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        justify-content: space-around;
-    }
-
-    h1 {
-        font-size: 6rem;
-        font-weight: 100;
-        text-align: center;
-        border: double 10px rgb(250, 248, 248);
-        padding: 2%;
-        color: antiquewhite;
-        background-color: rgb(167, 77, 77);
-
-    }
-
-    nav {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        text-decoration: none;
-        padding: 3%;
-        margin: 3%;
-        justify-content: space-around;
-        word-spacing: 20px;
-        background-image: linear-gradient(to left brown, rgb(70, 20, 20));
-
     
-
-
-
-    ul {
-        list-style-type: none;
-        text-align: center;
-
-        li {
-            display: inline;
-        }
-    }
 }
 
-    form {
-        text-align: center;
 
+
+
+
+ 
+    .estilos_map {
+        background-color: map-get($map: $estilos, $key: color);
+        text-align: map-get($map: $estilos, $key: alineacion );
+        padding: map-get($map: $estilos, $key: relleno );
+        border: map-get($map: $estilos, $key:borde );
     }
 
-    .texto {
-        display: flex;
-        text-align: left;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: flex-start;
-
+    .estilos_map--inferior{
+        @extend.estilos_map;
+        color: rgb(219, 219, 227);
+        background-color: brown;
+        
     }
-
-    .volver {
-        text-align: center;
-        margin: 5%;
-
+    @mixin colours($a , $b) {
+        background-image: linear-gradient(to left, $a , $b);
+        
     }
-
-    a:link {
-        text-decoration: none;
+    .box_mixin{
+        @include colours(blue, yellow);
     }
-
-
-    @media only screen and (max-width: 767px) {
-        .container-padre {
-            background: antiquewhite;
-            grid-template-columns: auto;
-
-        }
-
-        .gradient {
-            background-image: radial-gradient(coral, grey);
-
-        }
-
-        li {
-            display: inline;
-        }
-    }
-}
