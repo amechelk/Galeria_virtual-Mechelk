@@ -5,7 +5,37 @@
     padding: 0;
     box-sizing: border-box;
     
+    
 }
+.animationTitle{
+    color: red;
+    animation-name: animationTitle;
+    animation-duration: 30s;
+    text-align: center;
+    letter-spacing:10px;
+  }
+  @keyframes animationTitle{
+    25% {color: brown;}
+    50% {color: darkred;}
+    75% {color: black;}
+    85% {color:crimson;}
+    100% {color:red;}
+  }
+div{
+    
+
+    h2{
+        letter-spacing: 10px;
+        text-align: center;
+    }
+}
+
+    .obra_disp{
+    border: 2px solid brown;
+    max-width: 25%;
+    margin: 3%;
+    }
+
 
 
 

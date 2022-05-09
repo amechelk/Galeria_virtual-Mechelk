@@ -8,18 +8,30 @@
   <link href="../styles/bootstrap.min.css" rel="stylesheet">
   <meta name="keywords" content="galeria, arte, pintura, dibujo">
   <meta name="description" content="Obras a la venta, consulte, no molesta.">
-  <!--<link rel="stylesheet" href="../styles/styles.css">-->
+  <link rel="stylesheet" href="../styles/styles.css">
   <style>
-    .animationTitle{
+    .animationTitle {
       color: red;
       animation-name: animationTitle;
       animation-duration: 15s;
     }
-    @keyframes animationTitle{
-      25% {color: brown;}
-      50% {color: darkred;}
-      75% {color: black;}
-      100% {color:red;}
+
+    @keyframes animationTitle {
+      25% {
+        color: brown;
+      }
+
+      50% {
+        color: darkred;
+      }
+
+      75% {
+        color: black;
+      }
+
+      100% {
+        color: red;
+      }
     }
   </style>
   <title>Obras</title>
@@ -27,7 +39,7 @@
 
 <body>
   <div class="animationTitle">
-    <h1 style="text-align: center; letter-spacing:10px;">Obras disponibles</h1>
+    <h1>Obra</h1>
   </div>
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -57,19 +69,20 @@
       </div>
     </nav>
 
-    <img src="../imagenes/flores.jpg" class="rounded float-left" style="max-width: 25%; margin: 3%;" alt="Flores">
-    <img src="../imagenes/autorretrato2.jpg" class="rounded float-left" style="max-width: 25%; margin: 3%;"
-      alt="Autorretrato">
-    <img src="../imagenes/Soledad.jpg" class="rounded float-left" style="max-width: 25%; margin: 3%;" alt="Soledad">
-    <img src="../imagenes/PalacioDeLaMemoria.jpg" class="rounded float-left" style="max-width: 25%; margin: 3%;"
-      alt="Palacio">
-    <img src="../imagenes/pesadilla.jpg" class="rounded float-left" style="max-width: 25%; margin: 3%;" alt="Pesadilla">
-    <img src="../imagenes/taza.jpg" class="rounded float-left" style="max-width: 25%; margin: 3%;" alt="taza">
-    <img src="..." class="rounded float-right" alt="...">
-    <img src="..." class="rounded float-right" alt="...">
-  </div>
-  <script src="./js/bootstrap.bundle.min.js">
-  </script>
+    <div><img src="../imagenes/flores.jpg" class="rounded float-left obra_disp" alt="Flores">
+      <img src="../imagenes/autorretrato2.jpg" class="rounded float-left obra_disp" alt="Autorretrato">
+      <img src="../imagenes/Soledad.jpg" class="rounded float-left obra_disp" alt="Soledad">
+      <img src="../imagenes/PalacioDeLaMemoria.jpg" class="rounded float-left obra_disp" alt="Palacio">
+      <img src="../imagenes/taza.jpg" class="rounded float-left obra_disp" alt="taza">
+      <img src="../imagenes/pesadilla.jpg" class="rounded float-left obra_disp" alt="Pesadilla">
+
+      <img src="../imagenes/loki1.jpg" class="rounded float-right obra_disp" alt="Loki1">
+      <img src="../imagenes/medusa.jpg" class="rounded float-right obra_disp" alt="Medusa">
+      <img src="../imagenes/loki2.jpg" class="rounded float-right obra_disp" alt="Loki2">
+
+    </div>
+    <script src="./js/bootstrap.bundle.min.js">
+    </script>
 </body>
 
 </html>

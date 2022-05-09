@@ -3,11 +3,39 @@
   padding: 0;
   box-sizing: border-box; }
 
+.animationTitle {
+  color: red;
+  animation-name: animationTitle;
+  animation-duration: 30s;
+  text-align: center;
+  letter-spacing: 10px; }
+
+@keyframes animationTitle {
+  25% {
+    color: brown; }
+  50% {
+    color: darkred; }
+  75% {
+    color: black; }
+  85% {
+    color: crimson; }
+  100% {
+    color: red; } }
+
+div h2 {
+  letter-spacing: 10px;
+  text-align: center; }
+
+.obra_disp {
+  border: 2px solid brown;
+  max-width: 25%;
+  margin: 3%; }
+
 .estilos_map, .estilos_map--inferior {
   background-color: antiquewhite;
   text-align: center;
   padding: 1rem;
-  border: 2px solid brown; }
+  border: 1px solid brown; }
 
 .estilos_map--inferior {
   color: #dbdbe3;
@@ -15,27 +43,3 @@
 
 .box_mixin {
   background-image: linear-gradient(to left, blue, yellow); }
-
-  .animationTitle {
-    color: red;
-    animation-name: animationTitle;
-    animation-duration: 15s;
-  }
-
-  @keyframes animationTitle {
-    25% {
-      color: brown;
-    }
-
-    50% {
-      color: darkred;
-    }
-
-    75% {
-      color: black;
-    }
-
-    100% {
-      color: red;
-    }
-  }
