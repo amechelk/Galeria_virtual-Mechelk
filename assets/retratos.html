@@ -15,9 +15,9 @@
 
 <body>
   <!--Tanto en este html como en el resto, bajo el h2 iría un pequeño texto de ser necesario, explicando técnica y
-  procedimientos para encargar-->
+  procedimientos para encargar. Las obras disponibles se irían añadiendo al ser digitalizadas, ya que el grid está establecido.-->
   <div class="animationTitle">
-    <h1 style="text-align: center; letter-spacing:10px;">Retratos</h1>
+    <h1 id="titulo-inicio-retratos">Retratos</h1>
   </div>
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light bg-light"">
@@ -46,23 +46,32 @@
         </ul>
       </div>
     </nav>
-
-
-    <h2>Procedimiento para encargar un retrato</h2>
-    <p><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatibus quaerat in explicabo
-        laborum maiores, culpa ipsa, voluptatum incidunt nisi suscipit eius. Asperiores ab quos optio molestiae mollitia
-        tempore. Culpa.
-        Laboriosam, quo. Soluta quas reiciendis earum pariatur sint similique ullam quidem consequuntur, ex provident
-        necessitatibus numquam temporibus labore minima natus harum eligendi mollitia. Doloribus hic ratione tempore nam
-        debitis repudiandae!</em></p>
-
-    <img src="../imagenes/autorretrato.jpg" class="rounded float-left obra_disp" alt="autorretrato">
-    <img src="../imagenes/RetratoOleo.jpg" class="rounded float-left obra_disp" alt="retrato">
-    <img src="../imagenes/RetratoPastel.jpg" class="rounded float-left obra_disp" alt="Retrato">
-    <img src="../imagenes/RetratoPastel1.jpg" class="rounded float-left obra_disp" alt="Retrato">
-    <img src="../imagenes/retratoPastel5.jpg" class="rounded float-left obra_disp" alt="Retrato">
   </div>
 
+
+  <div class="texto">
+    <h2>Procedimiento para encargar un retrato</h2>
+    <p><em>En lo que refiere a retratos siempre es mejor hacerlos del natural, es decir, el/la retratad@ debería posar.
+      Sin embargo se entiende que esto no siempre puede ser cómodo o preferible, por lo cuál también existe la opción de enviar
+      una foto y que un retrato sea hecho a partir de la misma. La técnica utilizada puede ir desde el óleo hasta retratos hechos
+      con pasteles, carbonilla, lápiz o gouache y acuarelas. Al ser altamente personalizados según los requerimientos del cliente,
+      los precios varían. Por cualquier consulta diríjase a la sección de contacto y responderé lo mas pronto posible.
+    </em></p>
+  </div>
+<section class="imagenes-grid">
+    <div><img src="../imagenes/autorretrato.jpg" class="rounded float-left obra_grid" alt="autorretrato"></div>
+    <div><img src="../imagenes/RetratoOleo.jpg" class="rounded float-left obra_grid" alt="retrato"></div>
+    <div><img src="../imagenes/RetratoPastel.jpg" class="rounded float-left obra_grid" alt="Retrato"></div>
+    <div><img src="../imagenes/RetratoPastel1.jpg" class="rounded float-left obra_grid" alt="Retrato"></div>
+    <div><img src="../imagenes/retratoPastel5.jpg" class="rounded float-left obra_grid" alt="Retrato"></div>
+    <div><img src="../imagenes/retratoPastel4.jpg" class="rounded float-left obra_grid" alt="Retrato"></div>
+    <div><img src="../imagenes/retratoPastel6.jpg" class="rounded float-left obra_grid" alt="Retrato"></div>
+    <div><img src="../imagenes/autorretrato2.jpg" class="rounded float-left obra_grid" alt="Retrato"></div>
+  
+</section>
+<footer id="pie" class="pieDePagina">
+  <div class="volver"><a href="#titulo-inicio-retratos"><strong>Volver</strong></a></div>
+</footer>
   <script src="./js/bootstrap.bundle.min.js">
   </script>
 </body>

@@ -17,7 +17,7 @@
 
 <body>
   <div class="animationTitle">
-    <h1>Láminas y Dibujos</h1>
+    <h1 id="titulo-inicio-laminas">Láminas y Dibujos</h1>
   </div>
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -46,28 +46,30 @@
         </ul>
       </div>
     </nav>
-
-    <div>
-      <h2 style="text-align: center;">Procedimiento para adquirir un dibujo</h2>
-      <p><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatibus quaerat in explicabo
-          laborum maiores, culpa ipsa, voluptatum incidunt nisi suscipit eius. Asperiores ab quos optio molestiae
-          mollitia
-          tempore. Culpa.
-          Laboriosam, quo. Soluta quas reiciendis earum pariatur sint similique ullam quidem consequuntur, ex provident
-          necessitatibus numquam temporibus labore minima natus harum eligendi mollitia. Doloribus hic ratione tempore
-          nam
-          debitis repudiandae!</em></p>
-    </div>
-
-    <img src="../imagenes/terraza.jpg" class="rounded float-left" style="max-width: 25%; margin: 3%;" alt="Lámina">
-    <img src="../imagenes/universo.jpg" class="rounded float-left" style="max-width: 25%; margin: 3%;" alt="Lámina">
-    <img src="../imagenes/Montañas.jpg" class="rounded float-left" style="max-width: 25%; margin: 3%;" alt="Lámina">
-
-    <img src=".." class="rounded float-left" style="max-width: 25%; margin: 3%;" alt="Lámina">
-    <img src=".." class="rounded float-left" style="max-width: 25%; margin: 3%;" alt="Lámina">
   </div>
-  <script src="./js/bootstrap.bundle.min.js">
-  </script>
+
+    <div class="texto">
+      <h2>Procedimiento para adquirir un dibujo</h2>
+      <p><em>Los dibujos pueden adquirirse tanto en forma de lámina en tamaño A3 y encuadrada, así
+          como el dibujo original, todos tamaño A4. En caso de interés puede comunicarse a través de
+          la página de <a href="../assets/contacto.html"> contacto</a> mencionando el nombre de la obra
+          en cuestión y le responderé lo mas pronto posible.
+        </em></p>
+    </div>
+    <section class="imagenes-grid">
+      <img src="../imagenes/terraza.jpg" class="rounded float-left obra_grid" alt="Lámina">
+      <img src="../imagenes/universo.jpg" class="rounded float-left obra_grid" alt="Lámina">
+      <img src="../imagenes/Montañas.jpg" class="rounded float-left obra_grid" alt="Lámina">
+      <img src="../imagenes/Horizontes.jpg" class="rounded float-left obra_grid"  alt="Lámina">
+      <img src="../imagenes/ritual.jpg" class="rounded float-left obra_grid"  alt="Lámina">
+      <img src="../imagenes/espejo (2).jpg" class="rounded float-left obra_grid"  alt="Lámina">
+
+    </section>
+    <footer id="pie" class="pieDePagina">
+      <div class="volver"><a href="#titulo-inicio-laminas"><strong>Volver</strong></a></div>
+    </footer>
+    <script src="./js/bootstrap.bundle.min.js">
+    </script>
 </body>
 
 </html>
