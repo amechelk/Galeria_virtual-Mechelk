@@ -5,60 +5,122 @@
     padding: 0;
     box-sizing: border-box;
     
-    
+
 }
-.animationTitle{
-    color: red;
+
+
+.animationTitle {
+    color: $color-background;
     animation-name: animationTitle;
     animation-duration: 30s;
     text-align: center;
-    letter-spacing:10px;
-  }
-  @keyframes animationTitle{
-    25% {color: brown;}
-    50% {color: darkred;}
-    75% {color: black;}
-    85% {color:crimson;}
-    100% {color:red;}
-  }
-div{
-    
+    letter-spacing: 10px;
+    background-color: $color-brandy;
+    padding: 3%;
+}
 
-    h2{
-        letter-spacing: 10px;
-        text-align: center;
+@keyframes animationTitle {
+    25% {
+        color: $color-brandy;
+    }
+
+    50% {
+        color: darkred;
+    }
+
+    75% {
+        color: black;
+    }
+
+    85% {
+        color: crimson;
+    }
+
+    100% {
+        color: $color-background;
     }
 }
 
-    .obra_disp{
-    border: 2px solid brown;
-    max-width: 25%;
+div {
+
+
+    h2 {
+        letter-spacing: 10px;
+        text-align: center;
+        color: $color-brandy;
+    }
+}
+
+
+
+.imagenes-grid {
+    min-height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: space-around;
+
+    .obra_grid {
+        max-width: 90%;
+        margin: 5%;
+        border: 5px $color-brandy solid;
+
+
+    }
+}
+
+.texto {
+    width: 100%;
+    background-color: $color-background;
+    padding: 2%;
     margin: 3%;
+}
+
+.volver {
+    text-align: center;
+    margin: 5%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.estilos_map {
+    background-color: map-get($map: $estilos, $key: color);
+    text-align: map-get($map: $estilos, $key: alineacion);
+    padding: map-get($map: $estilos, $key: relleno);
+    border: map-get($map: $estilos, $key:borde);
+}
+
+/*.estilos_map--inferior {
+    @extend.estilos_map;
+    color: rgb(219, 219, 227);
+    background-color: brown;
+
+}
+
+@mixin colours($a, $b) {
+    background-image: linear-gradient(to left, $a, $b);
+
+}
+
+.box_mixin {
+    @include colours(blue, yellow);
+}*/
+
+@media only screen and (max-width: 900px) {
+    .imagenes-grid {
+        grid-template-columns: 1fr;
+
     }
 
-
-
-
-
-
- 
-    .estilos_map {
-        background-color: map-get($map: $estilos, $key: color);
-        text-align: map-get($map: $estilos, $key: alineacion );
-        padding: map-get($map: $estilos, $key: relleno );
-        border: map-get($map: $estilos, $key:borde );
+    @media only screen and(min-width: 900px) {
+        .imagenes-grid {
+            grid-template-columns: 1fr 1fr;
+        }
     }
 
-    .estilos_map--inferior{
-        @extend.estilos_map;
-        color: rgb(219, 219, 227);
-        background-color: brown;
-        
+    li {
+        display: inline;
     }
-    @mixin colours($a , $b) {
-        background-image: linear-gradient(to left, $a , $b);
-        
-    }
-    .box_mixin{
-        @include colours(blue, yellow);
-    }
+}

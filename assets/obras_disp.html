@@ -6,40 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="../styles/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/styles.css">
   <meta name="keywords" content="galeria, arte, pintura, dibujo">
   <meta name="description" content="Obras a la venta, consulte, no molesta.">
-  <link rel="stylesheet" href="../styles/styles.css">
-  <style>
-    .animationTitle {
-      color: red;
-      animation-name: animationTitle;
-      animation-duration: 15s;
-    }
-
-    @keyframes animationTitle {
-      25% {
-        color: brown;
-      }
-
-      50% {
-        color: darkred;
-      }
-
-      75% {
-        color: black;
-      }
-
-      100% {
-        color: red;
-      }
-    }
-  </style>
   <title>Obras</title>
 </head>
 
 <body>
   <div class="animationTitle">
-    <h1>Obra</h1>
+    <h1 id="titulo-inicio-obra">Obra</h1>
   </div>
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -67,22 +42,49 @@
           </li>
         </ul>
       </div>
+    
     </nav>
-
-    <div><img src="../imagenes/flores.jpg" class="rounded float-left obra_disp" alt="Flores">
-      <img src="../imagenes/autorretrato2.jpg" class="rounded float-left obra_disp" alt="Autorretrato">
-      <img src="../imagenes/Soledad.jpg" class="rounded float-left obra_disp" alt="Soledad">
-      <img src="../imagenes/PalacioDeLaMemoria.jpg" class="rounded float-left obra_disp" alt="Palacio">
-      <img src="../imagenes/taza.jpg" class="rounded float-left obra_disp" alt="taza">
-      <img src="../imagenes/pesadilla.jpg" class="rounded float-left obra_disp" alt="Pesadilla">
-
-      <img src="../imagenes/loki1.jpg" class="rounded float-right obra_disp" alt="Loki1">
-      <img src="../imagenes/medusa.jpg" class="rounded float-right obra_disp" alt="Medusa">
-      <img src="../imagenes/loki2.jpg" class="rounded float-right obra_disp" alt="Loki2">
+    <div class="texto">
+      <h2>Procedimiento para adquirir o encargar una obra</h2>
+      <p><em>Aquí se muestran las obras a la venta. Puede consultar por precios, tamaño o técnica
+          a través de la página de <a href="../assets/contacto.html">contacto</a> mencionando el nombre
+          de la obra en cuestión. En caso de tener una idea particular, también se aceptan encargos.
+        </em></p>
 
     </div>
-    <script src="./js/bootstrap.bundle.min.js">
-    </script>
+    <section class="imagenes-grid">
+       <img src="../imagenes/flores.jpg" class="rounded float-left obra_grid" alt="Flores">
+       <img src="../imagenes/autorretrato2.jpg" class="rounded float-left obra_grid"alt="Autorretrato">
+       <img src="../imagenes/Soledad.jpg" class="rounded float-left obra_grid" alt="Soledad">
+       
+    </section>
+    <div class="texto">
+      <h2>Técnica y soportes</h2>
+      <p><em>Si decide encargar una obra, estas pueden ser realizadas en óleo sobre lienzo , cartón o madera, tinta /
+          fibra negra/ aguada
+          sobre papel, gouache y acuarelas sobre papel, y carbonilla y pasteles sobre papel. Tamaños variables,
+          a acordar según la técnica predilecta.
+
+        </em></p>
+    </div>
+    <section class="imagenes-grid">
+       <img src="../imagenes/PalacioDeLaMemoria.jpg" class="rounded float-left obra_grid"
+          alt="Palacio">
+        <img src="../imagenes/taza.jpg" class="rounded float-left obra_grid" alt="taza">
+        <img src="../imagenes/pesadilla.jpg" class="rounded float-left obra_grid" alt="Pesadilla">
+        <img src="../imagenes/loki1.jpg" class="rounded float-left obra_grid" alt="Loki1">
+        <img src="../imagenes/medusa.jpg" class="rounded float-left obra_grid" alt="Medusa">
+        <img src="../imagenes/loki2.jpg" class="rounded float-left obra_grid" alt="Loki2">
+        <img src="../imagenes/mimir.jpg" class="rounded float-left obra_grid" alt="Mimir">
+        <img src="../imagenes/soiree.jpg" class="rounded float-left obra_grid" alt="Soiree">
+        <img src="../imagenes/oro.jpg" class="rounded float-left obra_grid" alt="Loki2">
+    </section>
+    <footer id="pie" class="pieDePagina">
+      <div class="volver"><a href="#titulo-inicio-obra"><strong>Volver</strong></a></div>
+    </footer>
+  
+  <script src="./js/bootstrap.bundle.min.js">
+  </script>
 </body>
 
 </html>

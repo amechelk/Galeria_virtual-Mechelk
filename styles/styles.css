@@ -4,15 +4,17 @@
   box-sizing: border-box; }
 
 .animationTitle {
-  color: red;
+  color: #ffd9ce;
   animation-name: animationTitle;
   animation-duration: 30s;
   text-align: center;
-  letter-spacing: 10px; }
+  letter-spacing: 10px;
+  background-color: #8c4843;
+  padding: 3%; }
 
 @keyframes animationTitle {
   25% {
-    color: brown; }
+    color: #8c4843; }
   50% {
     color: darkred; }
   75% {
@@ -20,26 +22,66 @@
   85% {
     color: crimson; }
   100% {
-    color: red; } }
+    color: #ffd9ce; } }
 
 div h2 {
   letter-spacing: 10px;
-  text-align: center; }
+  text-align: center;
+  color: #8c4843; }
 
-.obra_disp {
-  border: 2px solid brown;
-  max-width: 25%;
+.imagenes-grid {
+  min-height: 100%;
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  justify-content: space-around; }
+  .imagenes-grid .obra_grid {
+    max-width: 90%;
+    margin: 5%;
+    border: 5px #8c4843 solid; }
+
+.texto {
+  width: 100%;
+  background-color: #ffd9ce;
+  padding: 2%;
   margin: 3%; }
 
-.estilos_map, .estilos_map--inferior {
-  background-color: antiquewhite;
+.volver {
+  text-align: center;
+  margin: 5%;
+  font-family: 'Times New Roman', Times, serif; }
+
+.estilos_map {
+  background-color: #ffd9ce;
   text-align: center;
   padding: 1rem;
   border: 1px solid brown; }
 
-.estilos_map--inferior {
-  color: #dbdbe3;
-  background-color: brown; }
+/*.estilos_map--inferior {
+    @extend.estilos_map;
+    color: rgb(219, 219, 227);
+    background-color: brown;
+
+}
+
+@mixin colours($a, $b) {
+    background-image: linear-gradient(to left, $a, $b);
+
+}
 
 .box_mixin {
-  background-image: linear-gradient(to left, blue, yellow); }
+    @include colours(blue, yellow);
+}*/
+@media only screen and (max-width: 900px) {
+  .imagenes-grid {
+    grid-template-columns: 1fr; } }
+
+@media only screen and (max-width: 900px) and (min-width: 900px) {
+  .imagenes-grid {
+    grid-template-columns: 1fr 1fr; } }
+
+@media only screen and (max-width: 900px) {
+  li {
+    display: inline; } }
